@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  text-size-adjust: none;
+  height: 100%;
+  /* background: URL("../assets/img/account-creator/account-creator-bg.png"); */
+}
+
+* {
+  font-family: "LuckiestGuy";
+}
+
+@font-face {
+  font-family: "LuckiestGuy";
+  src: url("assets/LuckiestGuy.ttf") format("truetype");
+}
+
+*:focus {
+  outline: none;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+#interactive-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#first-login {
+  text-align: center;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+#nickname-input {
+  width: 250px;
+  height: 55px;
+  text-align: center;
+  border: 0;
+  /* font-family: LuckiestGuy; */
+  font-size: 25px;
+  border-radius: 40px;
+}
+
+#creating-info-div {
+  height: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+#creating-info {
+  font-size: 25px;
+  align-self: flex-end;
+  padding-bottom: 20px;
+  color: white;
+}
+
+#accept-nickname {
+  margin-top: 70px;
+  width: 60px;
+  outline: none;
+}
+#accpet-nickname:focus {
+  outline: 0;
+}
+#profile-guy {
+  width: 100px;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 20%;
+}
+@media only screen and (pointer: none) and (pointer: coarse) {
+  #first-login {
+    transform: scale(2);
+  }
+
+  body {
+    background: URL("assets/img/account-creator/account-creator-bg.png");
+  }
+}
