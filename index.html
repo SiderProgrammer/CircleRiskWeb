@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Circle Risk</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width,
+               initial-scale=1.0,
+              "
+    />
+
+    <meta name="full-screen" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/main/page_structure/style.css"
+    />
+  </head>
+
+  <body>
+    <!-- I CAN't STYLE BODY WITH CSS BACKGROUND URL(...) BECAUSE
+  IT ISN'T COPIED WHEN BUILDING TO WWW FOLDER SO I HAVE TO CREATE IMG ELEMENT WHICH SRC PATH IS COPIED-->
+
+    <div id="first-login">
+      <img
+        id="background"
+        src="./src/main/assets/img/account-creator/account-creator-bg.png"
+      />
+      <img
+        src="./src/main/assets/img/account-creator/profile-guy.png"
+        id="profile-guy"
+      />
+      <div id="creating-info-div">
+        <span id="creating-info"></span>
+      </div>
+
+      <div id="interactive-div">
+        <input
+          id="nickname-input"
+          placeholder="nickname"
+          maxlength="10"
+          autocomplete="off"
+        />
+        <img
+          id="accept-nickname"
+          type="image"
+          src="./src/main/assets/img/account-creator/ok-button.png"
+        />
+      </div>
+    </div>
+  </body>
+</html>
